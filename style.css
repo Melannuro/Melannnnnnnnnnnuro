@@ -1,0 +1,122 @@
+body{
+  overflow-x: hidden;
+  background-image: url(fotos/fondo.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.nube {
+  top: 30px;
+  position: fixed;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  animation: moverNube 70s linear infinite alternate;
+}
+.gatico1 {
+  top: 40px;
+  position: fixed;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  animation: moverNube 30s linear infinite alternate;
+}
+.gallinita {
+  top: 0px;
+  position: fixed;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  animation: moverNube 20s linear infinite alternate;
+}
+.gaticoreal {
+  top: 0px;
+  position: fixed;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  animation: moverNube 18s linear infinite alternate;
+}
+.nubesvariadas {
+  z-index: 20;
+  top: 0px;
+  position: fixed;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  animation: moverNube 29s linear infinite alternate;
+}
+.masnubes {
+  z-index: 20;
+  top: 0px;
+  position: fixed;
+  position: absolute;
+  width: 100%; 
+  height: 100%;
+  animation: moverNube 20s linear infinite alternate;
+}
+@keyframes moverNube {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+  
+ #encabezado {
+  position: fixed;
+  z-index: 1;
+  background-color: aqua;
+}
+h1 {
+  text-align: center;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; 
+  }
+  25% {
+    background-position: 75% 50%;
+  }
+  50% {
+    background-position: 100% 50%; 
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%; 
+  }
+}
+#cuerpo {
+  position: fixed;
+  top: 190px;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  background: linear-gradient(
+    to bottom,
+    #c02425,
+    #f0cb35
+  ); 
+}
+#redireccionador {
+  position: fixed;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ff00f7d1;
+}
+#foto1 {
+  position: relative;
+  image-rendering: url(fotos/regalo.webp);
+  left: 0;
+  top: 0;
+  height: 300px;
+  width: 300px;
+  background-position: top;
+}
