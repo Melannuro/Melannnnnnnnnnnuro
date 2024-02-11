@@ -1,75 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!--
+
+      AQUI IDEAS
+      MUSICA DE FONDO COMO PIEL CANELA
+      SACAR IDEAS DE LA PLAYLIST DE MELANIE
+      EN EL CARRUSEL QUE NO SEA AUTOMATICO Y TENGA LAS SELECCIONES (CON LA POSIBILIDAD DE QUE A CADA FOTO CON UNA MUSICA)
+
+      EN EL VIDEO QUE HICE CON INTELIGENCIA ARTIFICAL 
+
+      EN LA NOCHE ESTRELLADA 
+
+      HACER EL HERMOSO ESCRITO DE TE AMO POR 1 MILLON
+
+    -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="operation.js"></script>
     <title>メラニー・ヤズベス・アコスタ・ベルムデス</title>
+    <audio autoplay src="Cuco - Piel Canela (Audio).mp3"></audio> 
   </head>
   <body>
     <video autoplay muted loop id="video-background">
-      <source src="fotos/nuves.mp4" type="video/mp4">
+      <source src="fotos/nuves.mp4" type="video/mp4" />
     </video>
     <div class="nube">
-      <img src="fotos/velociraptor.png" alt="Nube" width="230" height="auto">
-    </div> 
+      <img src="fotos/velociraptor.png" alt="Nube" width="230" height="auto" />
+    </div>
     <div class="gaticoreal">
-      <img src="fotos/gatitoreal.png" alt="Nube" width="190" height="auto">
-    </div> 
+      <img src="fotos/gatitoreal.png" alt="Nube" width="190" height="auto" />
+    </div>
     <div class="nubesvariadas">
-      <img src="fotos/nubesvariadas.png" alt="Nube" width="900" height="auto">
+      <img src="fotos/nubesvariadas.png" alt="Nube" width="900" height="auto" />
     </div>
     <div class="nubesvariadas2">
-      <img src="fotos/nubesvariadas.png" alt="Nube" width="900" height="auto">
-    </div> 
+      <img src="fotos/nubesvariadas.png" alt="Nube" width="900" height="auto" />
+    </div>
     <div class="nubesvariadasfija">
-      <img src="fotos/nubesvariadas.png" alt="Nube" width="900" height="auto">
-    </div> 
+      <img src="fotos/nubesvariadas.png" alt="Nube" width="900" height="auto" />
+    </div>
     <div class="nubesvariadasfinal">
-      <img src="fotos/nubesvariadas.png" alt="Nube" width="900" height="auto">
-    </div> 
+      <img src="fotos/nubesvariadas.png" alt="Nube" width="900" height="auto" />
+    </div>
     <div class="masnubes">
-      <img src="fotos/masnubes.png" alt="Nube" width="500" height="auto">
-    </div> 
+      <img src="fotos/masnubes.png" alt="Nube" width="500" height="auto" />
+    </div>
     <div class="gatico1">
-      <img src="fotos/gatico.png" alt="Nube" width="279" height="auto">
+      <img src="fotos/gatico.png" alt="Nube" width="279" height="auto" />
     </div>
     <div class="gallinita">
-      <img src="fotos/gallinitaaaa.png" alt="Nube" width="210" height="auto">
+      <img src="fotos/gallinitaaaa.png" alt="Nube" width="210" height="auto" />
     </div>
     <div class="coronita">
-      <img src="fotos/corona1.png" alt="Nube" width="200" height="auto">
+      <img src="fotos/corona1.png" alt="Nube" width="200" height="auto" />
     </div>
     <div class="fnaf">
-      <img src="fotos/fnaf.png" alt="Nube" width="200" height="auto">
+      <img src="fotos/fnaf.png" alt="Nube" width="200" height="auto" />
     </div>
     <div class="cocoro">
-      <img src="fotos/cocoro.png" alt="Nube" width="200" height="auto">
+      <img src="fotos/cocoro.png" alt="Nube" width="200" height="auto" />
     </div>
     <div class="gatito10">
-      <img src="fotos/gatito10.png" alt="Nube" width="200" height="auto">
+      <img src="fotos/gatito10.png" alt="Nube" width="200" height="auto" />
     </div>
     <div class="gatito20">
-      <img src="fotos/gatito20.png" alt="Nube" width="200" height="auto">
-    </div>   
+      <img src="fotos/gatito20.png" alt="Nube" width="200" height="auto" />
+    </div>
     <div class="gatito30">
-      <img src="fotos/gatito30.png" alt="Nube" width="200" height="auto">
-    </div>    
-  
+      <img src="fotos/gatito30.png" alt="Nube" width="200" height="auto" />
+    </div>
+
     <!-- NOMAMES AVER TODO LO DE ARRIBA SON LAS DIV DE LAS NUBES
     EN LA PARTE DE ABAJO VAMOS A PONER CONTENIDO TEXTUAL
     -->
-      <label id="recuerdo">
-      Te acuerdas que dijiste que una de las cosas mas romanticas fue ver nubes?
-      UwU TE AMO
-      </label>
-      <video autoplay muted loop id="video-pasto">
-        <source src="fotos/pasto.mp4" type="video/mp4">
-      </video> 
-      <video autoplay muted loop id="video-atardecer">
-        <source src="fotos/atardecer.mp4" type="video/mp4">
-      </video> 
+    <div class="message-box" id="messageBox">
+      <span class="close-button" onclick="closeMessageBox()">&times;</span>
+      <p>
+        Te acuerdas que me dijiste que una de las cosas romanticas favortias fue ver nubes juntos. Hice esto pensando en vos;
+      </p>
+    </div>
+    <!-- Nomames aqui divido todo el tema de las nubes
+    PASAMOS AL el video por IA
+    -->
+    <video autoplay muted loop id="video-pasto">
+      <source src="fotos/pasto.mp4" type="video/mp4" />
+    </video>
+    <!--
+      AQUI PASAMOS A EL VIDEO DEL ATARDECER
+      en donde va a estar el carrusel de nosotros que se active con un boton,
+      muestre una pequeña descripcion de la foto 
+      por orden como la musica
+    -->
+    <video autoplay muted loop id="video-atardecer">
+      <source src="fotos/atardecer.mp4" type="video/mp4" />
+    </video>
+
+    <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <div class="carousel-slide">
+          <img src="fotos/foto1.png" alt="Imagen 1">
+          <p class="slide-text">Texto para la imagen 1</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="fotos/foto2.png" alt="Imagen 2">
+          <p class="slide-text">Texto para la imagen 2</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="fotos/foto3.png" alt="Imagen 3">
+          <p class="slide-text">Texto para la imagen 3</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="fotos/foto4.png" alt="Imagen 4">
+          <p class="slide-text">Texto para la imagen 4</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="fotos/foto5.png" alt="Imagen 5">
+          <p class="slide-text">Texto para la imagen 5</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="fotos/foto6.png" alt="Imagen 6">
+          <p class="slide-text">Texto para la imagen 6</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="fotos/foto7.png" alt="Imagen 7">
+          <p class="slide-text">Texto para la imagen 7</p>
+        </div>
+      </div>
+      <button id="prevSlide">←</button>
+      <button id="nextSlide">→</button>
+    </div>
+    
+    
+   <!-- <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <img class="carousel-slide" src="fotos/foto1.png" alt="Imagen 1">
+        <img class="carousel-slide" src="fotos/foto2.png" alt="Imagen 1">
+        <img class="carousel-slide" src="fotos/foto3.png" alt="Imagen 1">
+        <img class="carousel-slide" src="fotos/foto4.png" alt="Imagen 1">
+        <img class="carousel-slide" src="fotos/foto5.png" alt="Imagen 1">
+        <img class="carousel-slide" src="fotos/foto6.png" alt="Imagen 1">
+        <img class="carousel-slide" src="fotos/foto7.png" alt="Imagen 1">
+      </div>
+    </div> -->
+  
+
+    <!--
+      AQUI PASAMOS A EL VIDEO DE LA NOCHE ESTRELLADA
+    -->
     <script src="operation.js"></script>
   </body>
 </html>
