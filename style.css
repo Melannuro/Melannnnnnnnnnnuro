@@ -168,9 +168,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: 1530px;
+  width: 1700px;
   z-index: -9;
   height: auto;
 }
@@ -178,7 +176,7 @@ body{
   position: absolute;
   top: 790px;
   left: 0px;
-  width: 1690px;
+  width: 1700px;
   height: auto;
   transition: opacity 1s ease-in-out, clip-path 1s ease-in-out;
 }
@@ -215,13 +213,13 @@ body{
 }
 .carousel-container {
   position: relative;
-  width: 300px;
+  width: 400px;
   z-index: 9999999999999;
-  top: 2000px;
-  left: 40%;
+  top: 790px;
+  left: 37%;
   height: auto;
   overflow: hidden;
-  text-color: white ;
+  text-color: rgb(130, 0, 229) ;
 }
 
 .carousel-wrapper {
@@ -245,10 +243,17 @@ body{
 
 .carousel-slide .slide-text {
   margin-top: 10px;
+  color: rgb(153, 0, 255);
+  text-shadow: 
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
 }
 
 #prevSlide, #nextSlide {
   position: absolute;
+  color: white;
   top: 50%;
   z-index: 999999999999999999999999999999999;
   transform: translateY(-50%);
